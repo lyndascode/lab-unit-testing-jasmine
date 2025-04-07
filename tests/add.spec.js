@@ -22,3 +22,10 @@ describe("Iteration 1 | Getting Started", () => {
     });
   });
   
+
+  it('should return undefined if any of the two arguments is not a number', function () {
+    expect(add('2', 3)).toBeUndefined();
+    expect(add(2, 'hello')).toBeUndefined();
+    expect(add(undefined, 3)).toBeUndefined();
+  });
+  
